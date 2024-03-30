@@ -1,0 +1,32 @@
+.hint {
+  padding: 8px 20px;
+  position: relative;
+  left: 100px;
+  top:100px;
+  font-size: 24px;
+  color: white;
+  border: 1px solid #12344D;
+  border-radius:8px;
+  background-color: #12344D;
+    top: 50px;
+    &::after {
+      content:attr(aria-label);
+      width: 100%;
+      border: 1px solid #12344D;
+      border-radius:8px;
+      background-color: #12344D;
+      position: absolute;
+      left: 50px;
+      top: 60px;
+    }
+    &::before {
+      content:"";
+      border-bottom: 12px solid #12344D;
+      border-right: 12px solid transparent;
+      border-left: 12px solid transparent;
+      position: absolute;
+      top: 50px;
+      left: 54px;
+    }
+
+}
